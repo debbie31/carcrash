@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Crash</title>
+    <link href="game.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="road">
+      <div id="carEnemy"></div>
+      <div id="currentScore">Score: 0</div>
+      <div id="myCar"></div>
+      <button id="exitBtn1">Exit</button>
+    </div>
+    <div id="startScreen">
+      <button id="startBtn">start game</button>
+      <div class="dropDown">
+        <button id="myBtn" class="dropBtn">HOW TO PLAY</button>
+        <div id="myDropdown" class="dropDownContent">
+          <ul>
+            <li>
+              The player can play the game via keyboard bindings (Left Arrow Key
+              to Move Left, Right Arrow Key to Move Right).
+            </li>
+            <li>
+              The longer you stay in the road your score will continue to
+              increase.
+            </li>
+            <li>
+              The game will be over if your car crash with the car ahead of you.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="result">
+      <h1>Game Over</h1>
+      <p id="score"></p>
+      <button id="restartBtn">Restart</button>
+      <button id="exitBtn2">Exit</button>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>

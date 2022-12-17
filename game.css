@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background-image: url('image/grass.jpeg');
+  background-repeat: no-repeat;
+  background-color: #072707;
+  background-position: center;
+}
+#startScreen {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('image/startscreen.png');
+  background-size: cover;
+  background-position: center;
+}
+#road {
+  width: 300px;
+  height: 100vh;
+  margin: auto;
+  background-image: url('image/road.png');
+  background-size: contain;
+  display: none;
+}
+#myCar {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 400px;
+  left: 100px;
+  background-image: url('image/mycar.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#carEnemy {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  animation: slide 0.9s infinite linear;
+  background-image: url('image/carenemy.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@keyframes slide {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 600px;
+  }
+}
+#restartBtn,
+#startBtn,
+#exitBtn2 {
+  padding: 1rem;
+  border-radius: 15px;
+  border: none;
+  color: #a19c9c;
+  margin-top: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-shadow: 2px 2px #843838;
+  background-color: #212323;
+}
+#exitBtn1 {
+  background-color: #212323;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #a19c9c;
+  position: absolute;
+  top: 2%;
+  left: 95%;
+  padding: 0.6rem;
+}
+#startBtn {
+  position: absolute;
+  top: 77%;
+  left: 42%;
+  box-shadow: 15px 15px 15px #4a3838;
+}
+#startBtn:hover,
+#restartBtn:hover,
+#exitBtn2:hover {
+  background-color: #43504f;
+  color: #7ee2a1;
+}
+#startBtn:active {
+  background-color: #b46666;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#result {
+  height: 220px;
+  width: 500px;
+  background-color: #015d45;
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  font-size: 25px;
+  text-align: center;
+  color: #ff002f;
+  font-family: fantasy;
+  box-shadow: 10px 10px 10px #777;
+  display: none;
+}
+#score {
+  font-size: 30px;
+  color: #7ee2a1;
+}
+#currentScore {
+  font-size: 25px;
+  color: #7ee2a1;
+  font-family: fantasy;
+  background-color: #015d45;
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  padding: 0.7rem;
+}
+.dropBtn {
+  background-color: #173b1e;
+  color: #ffffff;
+  height: 35px;
+  width: 150px;
+  font-size: 15px;
+}
+.dropBtn:hover,
+.dropBtn:focus {
+  background-color: #3e8e41;
+}
+.dropDownContent {
+  display: none;
+  position: absolute;
+  background-color: #32453f;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px #60414133;
+  width: 320px;
+}
+.show {
+  display: block;
+  color: #c1c8b6;
+  font-family: Verdana;
+  height: 250px;
+  padding: 10px;
+  text-align: justify;
+  line-height: 30px;
+}
+ul {
+  margin: 6px;
+}
